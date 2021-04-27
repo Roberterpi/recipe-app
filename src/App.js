@@ -12,12 +12,12 @@ const App = () => {
 
   useEffect(() => {
     console.log("Effect has been run");
-  });
+  },[counter]);
 
   return(
     <div className="App">
       <form className="search-form">
-        <input className="search-form" type="text"/>
+        <input className="search-bar" type="text"/>
         <button className="search-button" type="submit">Search</button>
       </form>
       <h1 onClick={() => setCounter(counter + 1)} >{counter}</h1>
